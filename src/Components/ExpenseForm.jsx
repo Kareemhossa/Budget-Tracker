@@ -47,7 +47,7 @@ const ExpenseForm = ({ selectedExpense, setSelectedExpense }) => {
           },
         },
       });
-
+      toast.success("Successfully edited!");
       setSelectedExpense(null);
     } else {
       if (type === "expense") {
@@ -67,6 +67,7 @@ const ExpenseForm = ({ selectedExpense, setSelectedExpense }) => {
             type,
           },
         });
+        toast.success("Successfully added!");
       } else if (type === "income") {
         if (!amount) {
           toast("Please fill amount fields");
@@ -80,6 +81,7 @@ const ExpenseForm = ({ selectedExpense, setSelectedExpense }) => {
             type,
           },
         });
+        toast.success("Successfully added!");
       }
     }
     // Reset form fields
@@ -111,6 +113,7 @@ const ExpenseForm = ({ selectedExpense, setSelectedExpense }) => {
     setDescription("");
     setType("expense");
     setSelectedExpense(null);
+    toast.success("Successfully Clear !");
   };
 
   return (

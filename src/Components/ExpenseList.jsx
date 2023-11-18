@@ -1,6 +1,7 @@
 // ExpenseList component
 import React from "react";
 import { useBudget } from "../Context/BudgetContext";
+import { toast } from "react-toastify";
 
 const ExpenseList = ({ edit }) => {
   const { state, dispatch } = useBudget();
@@ -14,6 +15,7 @@ const ExpenseList = ({ edit }) => {
       type: "DELETE_EXPENSE",
       payload: id,
     });
+    toast.success("Successfully Delete !");
   };
 
   return (
