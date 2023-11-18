@@ -1,0 +1,54 @@
+.contanierlist {
+  text-align: center;
+
+  table {
+    width: 100%;
+    border: 1px solid rgba(249, 250, 251, 0.55);
+    margin-top: 1rem;
+    border-radius: 8px;
+    th,
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(249, 250, 251, 0.55);
+    }
+
+    th {
+      background-color: rgba(16 18 27 / 40%);
+      font-size: medium;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(16 18 27 / 60%);
+        // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 2px 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  button {
+    color: #f9fafb;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.4s;
+    border: 1px solid rgba(249, 250, 251, 0.55);
+  }
+
+  button.delete {
+    background-color: #ff5555;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  button.edit {
+    background-color: #4caf50;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
