@@ -9,7 +9,7 @@ body {
   // if (background-image:notfound) can use background from "../Assets//macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg"
   background-size: cover;
   background-position: center;
-  padding: 2em;
+  padding: 0.5em;
   width: 100%;
   color: #f9fafb;
 }
@@ -29,6 +29,12 @@ body {
   @import "./ExpenseForm";
   @import "./List";
   @import "./Summary";
+}
+
+@media screen and (max-width: 660px) {
+  .App {
+    padding: 0.7rem;
+  }
 }
 
 // background-color: rgba(16 18 27 / 40%);

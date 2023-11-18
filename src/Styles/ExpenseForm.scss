@@ -32,7 +32,7 @@
       border: 1px solid #ddd;
       border-radius: 4px;
       outline: none;
-      width: 95%;
+      width: 100%;
       font-size: 1rem;
 
       &:focus {
@@ -46,22 +46,6 @@
       align-items: center;
       justify-content: center;
       gap: 3rem;
-    }
-    @media (max-width: 600px) {
-      .button-row {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-      }
-
-      input {
-        width: 90%;
-        padding: 0.7rem;
-      }
-
-      button {
-        width: 90%;
-      }
     }
 
     button {
@@ -115,9 +99,26 @@
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 660px) {
   .containerForm {
-    margin: 1rem auto;
+    margin: 1rem 0;
     padding: 1rem 0;
+
+    form {
+      .button-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.7rem;
+      }
+
+      button {
+        width: 60%;
+      }
+    }
   }
 }
